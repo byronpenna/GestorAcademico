@@ -8,7 +8,7 @@ class Cliente extends CI_Model
 	}
 	// propiedades
 		public $_idCliente;
-		public $_persona;
+		public $_persona; // obj
 		public $_NIT;
 		public $_NCR;
 		public $_nombreComercial;

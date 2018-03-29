@@ -14,7 +14,9 @@
                 <ul class="nav navbar-nav">
                     <li class="liInicio"><a href="#">Inicio</a></li>
                     <li class="liIngresarStock">
-                    	<a href=<?php echo site_url("AdminProducto/ingresoProductoUsuario/") ?> >Ingresar stock</a>
+                    	<a href=<?php echo site_url("AlumnoController/agregar/") ?> >
+                        Gestion alumno
+                        </a>
                     </li>
     				<li class="liSacarStock">
     					<a href=<?php echo site_url("AdminProducto/sacarProductoUsuario/") ?>>

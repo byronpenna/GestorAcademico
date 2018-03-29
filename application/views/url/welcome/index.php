@@ -12,7 +12,7 @@
 	<div class = "container">
 		<div class="wrapper">
 			<form action=<?php echo site_url("welcome/login") ?> method="post" name="Login_Form" class="form-signin">       
-			    <h3 class="form-signin-heading">Abuela chepa</h3>
+			    <h3 class="form-signin-heading">Gestor academico</h3>
 				  <hr class="colorgraph"><br>
 				  
 				  <input type="text" class="form-control" name="Username" placeholder="Username" required="" autofocus="" />
