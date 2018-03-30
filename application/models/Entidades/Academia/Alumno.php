@@ -9,6 +9,7 @@ class Alumno extends CI_Model
 	// propiedades
 		public $_idAlumno;
 		public $_carnet;
+		public $_NIE;
 		public $_persona; // obj
 
 		public function llenarAlumnoDeFila($row){
@@ -19,6 +20,7 @@ class Alumno extends CI_Model
 				$alumno->_carnet 	= $row->carnet;
 				$alumno->_persona 	= new Persona();
 				$alumno->_persona->_idPersona = $row->persona_fk; 
+				//$alumno->NIE 		= $row->NIE;
 			} catch (Exception $e) {
 				
 			}

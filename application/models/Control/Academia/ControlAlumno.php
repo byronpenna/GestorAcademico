@@ -15,6 +15,9 @@ class ControlAlumno extends CI_Model
 			foreach ($query->result() as $key => $row) {
 				$alumno = new Alumno();
 				$alumno = $alumno->llenarAlumnoDeFila($row);
+				$alumno->_persona->_nombres = $row->nombres;;
+				$alumno->_persona->_apellidos = $row->apellidos;
+				
 				array_push($alumnos,$alumno);
 			}
 			$query->next_result();

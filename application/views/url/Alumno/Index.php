@@ -58,6 +58,53 @@
 			</div>
 		</div>	
 	</div>
-	
+	<div class="row marginNull">
+		<table class="table ">
+			<thead>
+				<tr>
+					<th>
+						Nombre completo
+					</th>
+					<th>
+						Carnet
+					</th>
+					<th>
+						NIE
+					</th>
+					<th>
+						Acciones
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php 
+					foreach ($alumnos as $key => $alumno) {
+				?>
+					<tr>
+						<td>
+							<?php 
+								echo $alumno->_persona->_nombres." ".$alumno->_persona->_apellidos;
+							?>
+						</td>
+						<td>
+							<?php
+								echo $alumno->_carnet; 
+							?>
+						</td>
+						<td>
+							<?php
+								echo "nie";
+							?>
+						</td>
+						<td>
+							Acciones
+						</td>
+					</tr>
+				<?php
+					}
+				?>
+			</tbody>
+		</table>
+	</div>
 </body>
 </html>
