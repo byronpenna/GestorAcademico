@@ -97,7 +97,9 @@
 							?>
 						</td>
 						<td>
-							Acciones
+							<button class="btn btn-warning">
+								Dar de baja
+							</button>
 						</td>
 					</tr>
 				<?php

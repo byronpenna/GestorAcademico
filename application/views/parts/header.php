@@ -7,7 +7,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-              <a class="navbar-brand" href="#">Abuela chepa admin</a>
+              <a class="navbar-brand" href="#">Gestor academico</a>
             </div>
             
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
@@ -19,8 +19,8 @@
                         </a>
                     </li>
     				<li class="liSacarStock">
-    					<a href=<?php echo site_url("AdminProducto/sacarProductoUsuario/") ?>>
-							Sacar stock	
+    					<a href=<?php echo site_url("InscripcionController/inscribir/") ?> >
+							Inscripcion	
 						</a>
     				</li>     
     				<li class="liCerrarSession">
