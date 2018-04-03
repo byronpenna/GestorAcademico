@@ -9,6 +9,29 @@ class InscripcionController extends PadreController
 		$this->load->library('session');
 		$this->load->model("Control/Academia/ControlAnio");
 	}
+	function ajaxCargarInscritosSeccion(){
+		try {
+			$this->load->model("Control/Academia/ControlSeccionAlumno");
+			$control = new ControlSeccionAlumno();
+			$frm = json_decode($_POST["form"]);
+			$obj = new stdClass();
+			foreach ($frm as $key => $value) {
+				$obj->$key = $value;
+			}
+			/*echo "obj es";
+			print_r($obj);*/
+			$seccionesAlumno = $control->obtenerAlumnosDeSeccion($obj->idSeccion);
+
+			$data = array(
+				'estado' => true,
+				'seccionesAlumno' => $seccionesAlumno
+			);
+			echo json_encode($data);
+			
+		} catch ( Exception  $e) {
+			
+		}
+	}
 	function obtenerSeccionesDeAnio(){
 		try {
 			$this->load->model("Control/Academia/ControlSecciones");
@@ -33,6 +56,7 @@ class InscripcionController extends PadreController
 			
 		}
 	}
+
 	function inscribir(){
 		try {
 			$controlAnios = new ControlAnio();

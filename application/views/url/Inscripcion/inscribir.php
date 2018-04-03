@@ -14,6 +14,9 @@
 		?> 
 	</pre>
 	<input type="hidden" name="txtHdObtenerSeccion" class="txtHdObtenerSeccion" value=<?php echo site_url("InscripcionController/obtenerSeccionesDeAnio") ?>>
+	<input type="hidden" name="txtHdInscripcionSeccion" class="txtHdInscripcionSeccion" value=<?php echo site_url("InscripcionController/ajaxCargarInscritosSeccion") ?>>
+	
+
 	<div class="row marginNull">
 		<div class="col-lg-4">
 			<label>Seleccione anio</label>

@@ -1,14 +1,14 @@
 $(document).ready(function(){
 
 	//console.log("Impresion consola");
-	var frm = {
-		idAnio: $(this).val()
-	}
-	llenarSeccion(frm);
+	iniciales();
 	$(document).on("change",".cbAnio",function(e){
+		eventoChangeCbAnio();
+	})
+	$(document).on("click",".btnCargar",function(e){
 		var frm = {
-			idAnio: $(this).val()
+			idSeccion: $(".cbSeccion").val()	
 		}
-		llenarSeccion($frm);
+		cargarTablaInscritos(frm);
 	})
 })
